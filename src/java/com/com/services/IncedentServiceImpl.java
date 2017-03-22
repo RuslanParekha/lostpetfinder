@@ -3,6 +3,7 @@ package com.com.services;
 import com.com.model.Photo;
 import com.com.repository.IncedentRepository;
 import com.com.model.Incedent;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
@@ -53,6 +54,7 @@ public class IncedentServiceImpl implements IncedentService {
         return incedentRepository.findByOwnerId(ownerId);
     }
 
+
     @Override
     public void add(Incedent incedent) {
         incedentRepository.saveAndFlush(incedent);
@@ -71,5 +73,9 @@ public class IncedentServiceImpl implements IncedentService {
     public byte[] getPhoto(long id) {
         Photo photo = incedentRepository.findByPhotoId(id).getPhoto();
         return photo.getBody();
+    }
+
+    public void setIncedentRepository(IncedentRepository incedentRepository){
+        this.incedentRepository = incedentRepository;
     }
 }

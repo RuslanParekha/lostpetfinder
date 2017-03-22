@@ -24,4 +24,6 @@ public interface IncedentService {
     void delete(long id);
 
     byte[] getPhoto(long id);
+
+
 }
