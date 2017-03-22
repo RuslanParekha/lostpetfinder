@@ -1,11 +1,9 @@
 package com.com.services;
 
+import com.com.model.Incedent;
 import com.com.model.Photo;
 import com.com.repository.IncedentRepository;
-import com.com.model.Incedent;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

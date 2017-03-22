@@ -8,7 +8,7 @@
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/appconfig-root.xml</param-value>
+    <param-value>WEB-INF/appconfig-root.xml, WEB-INF/appconfig-mvc.xml, WEB-INF/appconfig-data.xml, WEB-INF/appconfig-security.xml</param-value>
   </context-param>
 
   <jsp-config>
