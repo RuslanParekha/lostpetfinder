@@ -5,11 +5,10 @@
   <artifactId>security</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>security Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>lostpetfinder</name>
 
   <properties>
-    <jdk.version>1.7</jdk.version>
+    <jdk.version>1.8</jdk.version>
     <spring.version>4.2.0.RELEASE</spring.version>
     <spring-security.version>4.0.2.RELEASE</spring-security.version>
     <spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>
@@ -59,6 +58,12 @@
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-jpa</artifactId>
       <version>${spring-data-jpa.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.2.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -123,12 +128,6 @@
     </dependency>
 
     <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat-jdbc</artifactId>
-      <version>8.5.11</version>
-    </dependency>
-
-    <dependency>
       <groupId>com.heroku.sdk</groupId>
       <artifactId>heroku-jdbc</artifactId>
       <version>0.1.1</version>
@@ -139,6 +138,16 @@
 
   <build>
   <plugins>
+    <plugin>
+      <groupId>orh.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.5.1</version>
+      <configuration>
+        <source>1.8</source>
+        <target>1.8</target>
+      </configuration>
+    </plugin>
+
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-dependency-plugin</artifactId>
