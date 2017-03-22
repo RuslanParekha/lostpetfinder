@@ -4,7 +4,7 @@
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
-  <display-name>Lost Pet Finder</display-name>
+  <display-name>LostPetFinder</display-name>
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
@@ -55,6 +55,7 @@
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
 
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
