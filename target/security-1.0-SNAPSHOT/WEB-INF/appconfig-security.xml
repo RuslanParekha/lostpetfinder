@@ -32,7 +32,7 @@
     <beans:bean id="userDetailsServiceImpl"
                 class="com.com.services.UserDetailsServiceImpl"></beans:bean>
 
-
+    <bean id="incedentServiceImpl" class="com.com.services.IncedentServiceImpl"> </bean>
 
     <beans:bean id="encoder"
                 class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">

@@ -25,9 +25,7 @@
         </property>
     </bean>
 
-    <bean       id="incedentServiceImpl"
-        class="com.com.services.IncedentServiceImpl">
-    </bean>
+
 
     <bean id="multipartResolver"
                 class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
