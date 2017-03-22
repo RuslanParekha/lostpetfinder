@@ -15,6 +15,9 @@ import java.util.List;
  */
 public class IncedentServiceImpl implements IncedentService {
 
+    public IncedentServiceImpl() {
+    }
+
     @Autowired
     private IncedentRepository incedentRepository;
 

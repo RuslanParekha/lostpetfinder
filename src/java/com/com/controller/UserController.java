@@ -30,6 +30,9 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class UserController {
 
+    public UserController() {
+    }
+
     @Autowired
     private IncedentService incedentService;
 
