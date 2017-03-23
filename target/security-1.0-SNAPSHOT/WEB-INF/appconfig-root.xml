@@ -16,4 +16,8 @@
 
     <context:property-placeholder location="classpath:database.properties"/>
 
+    <bean id="userDetailsServiceImpl" class="com.com.services.UserDetailsServiceImpl"></bean>
+
+    <bean id="incedentServiceImpl" class="com.com.services.IncedentServiceImpl"></bean>
+
 </beans>
