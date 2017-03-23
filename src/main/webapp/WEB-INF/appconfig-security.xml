@@ -29,7 +29,9 @@
         </authentication-provider>
     </authentication-manager>
 
+    <beans:bean id="userDetailsServiceImpl" class="com.com.services.UserDetailsServiceImpl"></beans:bean>
 
+    <beans:bean id="incedentServiceImpl" class="com.com.services.IncedentServiceImpl"></beans:bean>
 
 
     <beans:bean id="encoder"
