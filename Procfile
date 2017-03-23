@@ -1,2 +1,1 @@
-web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/security-1.0-SNAPSHOT.war
-
+web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.w
