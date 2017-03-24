@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lostpetfinder" />
         <module name="security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lostpetfinder" target="1.8" />
       <module name="security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
